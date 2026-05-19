@@ -1,0 +1,12 @@
+rem Detener
+nssm stop PLC_Server
+
+rem Iniciar
+nssm start PLC_Server
+
+rem Desinstalar completamente
+nssm remove PLC_Server confirm
+
+nssm status PLC_Server
+
+nssm start PLC_Server
