@@ -21,7 +21,7 @@ PLC_Server/
 ├── plc_server.py          # Script principal
 ├── requirements.txt       # Dependencias Python
 ├── dist/
-│   └── PLC_Server.exe     # Ejecutable compilado (PyInstaller)
+│   └── PLC_Server.exe     # Ejecutable compilado (se puede poner en carpeta inicio si no se quiere hacer como servicio)
 └── README.md
 ```
 
