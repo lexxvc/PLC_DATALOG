@@ -1,6 +1,9 @@
 # PLC Server — Registro de Accesos Siemens
 
 Servicio Windows que escucha conexiones TCP de un PLC Siemens y registra los datos de acceso de usuarios en un archivo CSV. Corre 24/7 como servicio nativo de Windows vía NSSM, con reconexión automática y tres capas de robustez.
+O en su defecto puede funcionar como un programa exe que arranque en cada inicio de sesión del usuario.
+
+
 
 ---
 
@@ -22,6 +25,7 @@ PLC_Server/
 ├── requirements.txt       # Dependencias Python
 ├── dist/
 │   └── PLC_Server.exe     # Ejecutable compilado (se puede poner en carpeta inicio si no se quiere hacer como servicio)
+├── PLC                    #Libreria para TIA Portal 19
 └── README.md
 ```
 
@@ -189,7 +193,12 @@ Los datos origen son:
 - `"MA300".RANGO["MA300".X]` — INT con el nivel de acceso
 
 ---
-
+## Opcion Facil 
+- Coloca el executable en la carpeta Inicio de Windows
+- Carga la libreria en tu proyecto de TIA Portal 
+- Adapta tu logica de programación 
+- Conecta la PC al PLC mediante switch y genera las pruebas del sitema
+---
 ## Licencia
 
 MIT
